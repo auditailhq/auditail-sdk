@@ -1,0 +1,11 @@
+{
+  "issuer": "auditail",
+  "keys": [
+    {
+      "kid": "57678e4f4869d316",
+      "alg": "Ed25519",
+      "publicKey": "xuoo9VMYWu2d6dhIm5wcKsTOIEvCBN-dQhfxftOnZ1o",
+      "status": "current"
+    }
+  ]
+}

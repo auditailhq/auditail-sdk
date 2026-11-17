@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auditail"
+version = "0.11.1"
+description = "Controls and evidence for AI agents that move money: spending limits, human approval, a kill switch and a signed, tamper-evident audit log."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Auditail", email = "hello@auditail.io" }]
+keywords = ["ai-agents", "ai-guardrails", "agent-security", "llm", "guardrails", "human-in-the-loop", "spending-limits", "kill-switch", "audit-log", "tamper-evident", "policy", "fintech", "payments", "compliance", "soc2", "langchain", "langgraph", "openai-agents"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Security",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3.13",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+verify = ["cryptography>=42"]
+
+[project.urls]
+Homepage = "https://auditail.io"
+Documentation = "https://auditail.io/docs"
+Repository = "https://github.com/auditailhq/auditail-sdk"
+"Request an API key" = "https://auditail.io/#waitlist"
+Tutorial = "https://auditail.io/docs/guides/payout-agent-tutorial"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["auditail*"]

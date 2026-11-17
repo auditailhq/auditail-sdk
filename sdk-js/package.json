@@ -1,0 +1,64 @@
+{
+  "name": "auditail-sdk",
+  "version": "0.11.1",
+  "description": "Controls and evidence for AI agents that move money: spending limits, human approval, a kill switch and a signed, tamper-evident audit log.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai-agents",
+    "ai-guardrails",
+    "agent-security",
+    "llm",
+    "guardrails",
+    "human-in-the-loop",
+    "spending-limits",
+    "kill-switch",
+    "reconciliation",
+    "digital-signature",
+    "audit-log",
+    "tamper-evident",
+    "policy",
+    "fintech",
+    "payments",
+    "compliance",
+    "soc2",
+    "langchain",
+    "mcp",
+    "model-context-protocol",
+    "temporal",
+    "langgraph",
+    "openai-agents"
+  ],
+  "author": "Auditail <hello@auditail.io> (https://auditail.io)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auditailhq/auditail-sdk.git",
+    "directory": "sdk-js"
+  },
+  "homepage": "https://auditail.io",
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "bugs": {
+    "url": "https://github.com/auditailhq/auditail-sdk/issues"
+  },
+  "bin": {
+    "auditail-verify": "dist/cli.js",
+    "auditail-mcp-proxy": "dist/mcp-proxy-cli.js"
+  }
+}

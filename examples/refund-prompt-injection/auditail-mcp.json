@@ -1,0 +1,9 @@
+{
+  "agentId": "support-agent",
+  "tools": {
+    "read_inbox": { "mode": "allow", "untrusted": "inbound_email" },
+    "get_order": { "mode": "allow" },
+    "issue_refund": { "action": "issue_refund", "payload": { "amount": "amount", "currency": "currency", "customer.accountId": "accountId", "orderId": "orderId" } }
+  },
+  "unlisted": "deny"
+}
