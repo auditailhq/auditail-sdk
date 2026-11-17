@@ -1,0 +1,11 @@
+{
+  "mode": "shadow",
+  "defaultAction": "deny",
+  "actions": {
+    "create_payout": {
+      "requireApproval": [{ "field": "amount", "op": ">", "value": 5000, "reason": "payouts over $5,000 need a human" }],
+      "limits": [{ "name": "daily-payouts", "window": "24h", "sum": "amount", "max": 25000, "onExceed": "require_approval" }],
+      "firstTime": [{ "field": "beneficiary.id", "window": "365d", "onFirst": "require_approval", "known": ["ben_acme", "ben_northwind"] }]
+    }
+  }
+}

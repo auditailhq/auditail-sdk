@@ -1,0 +1,9 @@
+{
+  "defaultAction": "deny",
+  "actions": {
+    "create_payout": {
+      "requireApproval": [{ "field": "amount", "op": ">", "value": 1000, "reason": "payouts over $1,000 need a human" }],
+      "limits": [{ "name": "daily", "window": "24h", "sum": "amount", "max": 25000, "onExceed": "deny" }]
+    }
+  }
+}

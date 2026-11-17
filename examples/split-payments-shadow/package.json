@@ -1,0 +1,8 @@
+{
+  "name": "auditail-example-split-payments-shadow",
+  "private": true,
+  "type": "module",
+  "description": "A $14,700 invoice paid as three payouts under a $5,000 approval threshold, found by Auditail's shadow drift report without blocking anything.",
+  "scripts": { "start": "node run.mjs" },
+  "dependencies": { "auditail-sdk": "^0.11.1" }
+}
