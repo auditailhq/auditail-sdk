@@ -293,7 +293,7 @@ export { verifyReceipt, verifyCheckpoint, verifyEvidence, verifyReport, verifyBu
 export type { ReceiptClaims, CheckpointClaims, VerifyReceiptOptions, VerifyResult, PublicKeyInfo, Evidence, EvidenceEvent, EvidenceReport, BundleReport, TimestampInfo } from './verify';
 export { generateApproverKey, importApproverKey, signApproval } from './approver';
 
-const SDK_VERSION = '0.11.1';
+const SDK_VERSION = '0.12.0';
 const MAX_QUEUE = 10_000;
 const MAX_BATCH = 50;
 const MAX_DELIVERY_ATTEMPTS = 5;

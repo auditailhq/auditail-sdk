@@ -10,5 +10,5 @@ from .client import Auditail
 from .types import GuardOptions, GuardResult, GuardApproval, GuardrailRule, AuditEvent
 from . import rules
 
-__version__ = "0.11.1"
+__version__ = "0.12.0"
 __all__ = ["Auditail", "GuardOptions", "GuardResult", "GuardApproval", "GuardrailRule", "AuditEvent", "rules"]

@@ -1,6 +1,6 @@
 # auditail-sdk
 
-> Controls and evidence for AI agents that move money. Limits agents can't change, human approval, a kill switch, and a signed, tamper-evident record of every decision.
+> **Get your money-moving AI agent to production.** Hard limits the agent can't change, a person on risky payments, every payment matched to what settled, and a signed risk pack your risk team, sponsor bank or auditor can verify.
 
 **[📖 Full Documentation](https://auditail.io/docs)** · **[🚀 Join the Private Beta](https://auditail.io/waitlist)**
 

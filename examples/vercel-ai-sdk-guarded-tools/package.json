@@ -1,0 +1,13 @@
+{
+  "name": "auditail-example-vercel-ai-sdk-guarded-tools",
+  "private": true,
+  "type": "module",
+  "description": "Vercel AI SDK tools that ask Auditail before moving money, and tell the model why when the answer is no.",
+  "scripts": { "start": "node agent.mjs" },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.0",
+    "ai": "^7.0.0",
+    "auditail-sdk": "^0.12.0",
+    "zod": "^4.0.0"
+  }
+}

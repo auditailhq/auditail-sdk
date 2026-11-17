@@ -1,7 +1,11 @@
 # Auditail SDKs and verifier
 
-> **Controls and evidence for AI agents that move money.**
-> Limits agents can't change, human approval for risky actions, a kill switch, settlement checks, and a signed, tamper-evident record of every decision.
+> **Get your money-moving AI agent to production.**
+> Hard limits the agent can't change, a person on risky payments, every payment matched to what settled, and a signed risk pack your risk team, sponsor bank or auditor can verify.
+
+```bash
+AUDITAIL_APPROVER_TOKEN=atl_appr_... npx -p auditail-sdk auditail init   # starter policy in shadow mode: nothing blocked, everything recorded
+```
 
 **[📖 Documentation](https://auditail.io/docs)** · **[🧭 For evaluators](https://auditail.io/docs/evaluators)** · **[📝 Changelog](https://auditail.io/docs/changelog)** · **[Sample risk pack](https://auditail.io/samples/auditail-sample-risk-pack.html)**
 
@@ -9,9 +13,9 @@ This repository holds everything that runs on your side, under the MIT license:
 
 | Path | What it is |
 |---|---|
-| [`sdk-js`](./sdk-js) | `auditail-sdk` on npm: `guard()`, receipts, the MCP proxy (`auditail-mcp-proxy`) and the offline verifier (`auditail-verify`) |
+| [`sdk-js`](./sdk-js) | `auditail-sdk` on npm: `guard()`, receipts, `auditail init`, the MCP proxy (`auditail-mcp-proxy`) and the offline verifier (`auditail-verify`) |
 | [`sdk-python`](./sdk-python) | `auditail` on PyPI: `guard()`, receipts and receipt verification |
-| [`examples`](./examples) | Runnable examples: a prompt-injected refund stopped over MCP; durable payout approval with Inngest |
+| [`examples`](./examples) | Runnable examples: a prompt-injected refund stopped over MCP, split payments found in shadow mode, an agent that skips the check and gets nothing paid, Vercel AI SDK tools, and durable approval with Temporal, Inngest and LangGraph |
 | [`AUDITAIL_PUBLIC_KEYS.json`](./AUDITAIL_PUBLIC_KEYS.json) | Auditail's Ed25519 public keys, pinned |
 
 The Auditail service (policy engine, approvals, settlement, reports, dashboard) is proprietary and runs at api.auditail.io.

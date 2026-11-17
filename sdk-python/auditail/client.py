@@ -21,7 +21,7 @@ from typing import Any, Callable, Deque, Dict, Iterable, List, Optional
 
 from .types import AuditEvent, GuardApproval, GuardOptions, GuardResult, GuardrailRule
 
-SDK_VERSION = "0.11.1"
+SDK_VERSION = "0.12.0"
 MAX_QUEUE = 10_000
 MAX_BATCH = 50
 MAX_DELIVERY_ATTEMPTS = 5

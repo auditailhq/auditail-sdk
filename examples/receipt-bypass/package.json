@@ -1,0 +1,8 @@
+{
+  "name": "auditail-example-receipt-bypass",
+  "private": true,
+  "type": "module",
+  "description": "An agent skips the check and calls the payout service directly. Without a valid Auditail receipt for exactly that payment, nothing is paid.",
+  "scripts": { "service": "node payout-service.mjs", "agents": "node agent.mjs" },
+  "dependencies": { "auditail-sdk": "^0.12.0" }
+}

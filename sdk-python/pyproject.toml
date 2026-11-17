@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "auditail"
-version = "0.11.1"
+version = "0.12.0"
 description = "Controls and evidence for AI agents that move money: spending limits, human approval, a kill switch and a signed, tamper-evident audit log."
 readme = "README.md"
 license = "MIT"

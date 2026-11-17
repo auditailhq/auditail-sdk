@@ -1,0 +1,11 @@
+{
+  "defaultAction": "deny",
+  "actions": {
+    "issue_refund": {
+      "requireApproval": [{ "field": "amount", "op": ">", "value": 200, "reason": "refunds over $200 need a human" }],
+      "limits": [{ "name": "daily-refunds", "window": "24h", "sum": "amount", "max": 2000, "onExceed": "deny" }],
+      "taintedSession": "require_approval",
+      "hint": "Refunds above $200, or after reading untrusted content, need a human."
+    }
+  }
+}

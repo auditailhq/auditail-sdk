@@ -1,6 +1,6 @@
 {
   "name": "auditail-sdk",
-  "version": "0.11.1",
+  "version": "0.12.0",
   "description": "Controls and evidence for AI agents that move money: spending limits, human approval, a kill switch and a signed, tamper-evident audit log.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -59,6 +59,7 @@
   },
   "bin": {
     "auditail-verify": "dist/cli.js",
-    "auditail-mcp-proxy": "dist/mcp-proxy-cli.js"
+    "auditail-mcp-proxy": "dist/mcp-proxy-cli.js",
+    "auditail": "dist/auditail-cli.js"
   }
 }

@@ -1,2 +1,2 @@
-auditail>=0.11.1
+auditail>=0.12.0
 langgraph>=1.0
